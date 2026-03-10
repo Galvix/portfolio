@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Singhal - Portfolio</title>
+    <!-- Google Fonts: JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Elements -->
+    <div class="bg-glow"></div>
+    <div class="bg-pattern"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span>galvix</span><span class="accent-color">/></span>
+            </a>
+            <div class="nav-links">
+                <a href="#home"><span class="accent-color">#</span>home</a>
+                <a href="#works"><span class="accent-color">#</span>works</a>
+                <a href="#about"><span class="accent-color">#</span>about</a>
+                <a href="#achievements"><span class="accent-color">#</span>achievements</a>
+                <a href="#contact"><span class="accent-color">#</span>contact</a>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero hidden">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hey, I'm Dev Singhal.<br>
+                    <span class="accent-color typing-effect">ML Engineer & CV Developer</span>
+                </h1>
+                <p class="hero-body">
+                    I train YOLO models, deploy ML on edge devices, and build apps people actually use.
+                </p>
+                <p class="hero-subtext" title="Omnitrix level operations">
+                    B.Tech CS @ Amity University Noida &middot; 8.26 CGPA
+                </p>
+                <!-- Temporary buttons/links for hero if needed, or simply empty -->
+                <div class="hero-actions">
+                    <a href="#works" class="btn btn-outline">View Projects</a>
+                    <a href="DevSinghal_Resume.pdf" download="Dev_Singhal_Resume" class="btn btn-outline">
+                        Download Resume
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="photo-frame">
+                    <!-- Geometric framing -->
+                    <div class="frame-shape shape-top-right"></div>
+                    <div class="frame-shape shape-bottom-left"></div>
+                    <img src="pic.jpeg" alt="Dev Singhal"
+                        class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about hidden">
+            <div class="section-header">
+                <h2 class="section-title"><span class="accent-color">#</span>about</h2>
+                <div class="divider">
+                    <div class="div-seg orange"></div>
+                    <div class="div-seg green-light"></div>
+                    <div class="div-seg green-main"></div>
+                </div>
+            </div>
+            <div class="about-content">
+                <p>
+                    Hey! You can call me <strong class="text-white">Galvix</strong>. I am currently pursuing my B.Tech
+                    in Computer Science at <strong class="text-white">Amity University Noida</strong>, with a strong
+                    passion for applied <strong class="text-white">ML/CV</strong> and building robust backend
+                    architectures.
+                </p>
+                <p>
+                    I'm a <strong class="text-white">Linux enthusiast</strong> who loves deploying models locally and
+                    tinkering with embedded edge devices. My projects are focused on practical, real-world
+                    utility—blending <strong class="accent-color">hardware and software</strong>. From integrating
+                    sensors with ESP32 microcontrollers for climate control, to deploying machine learning models on
+                    Raspberry Pi for automated solar panel maintenance, I enjoy crossing the boundary between the
+                    digital and physical worlds.
+                </p>
+                <p>
+                    This hands-on approach recently culminated in winning the <strong class="accent-color">"Best Startup
+                        Potential"</strong> award at Technovate 2025, which was judged by DRDO engineers.
+                </p>
+                <p>
+                    When I'm not training models or configuring Docker containers, I'm usually
+                    building full-stack applications to solve immediate challenges around me. <span
+                        style="font-size: 0.8em; opacity: 0.5;">(Or wondering how Greymatter would code this).</span>
+                </p>
+            </div>
+
+            <!-- Skills Sub-section -->
+            <div class="skills-wrapper">
+                <h3 class="skills-title"><span class="accent-color">#</span>skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-box"><i class="fa-brands fa-python"></i><span>Python</span></div>
+                    <div class="skill-box"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                            alt="C++" class="custom-icon"><span>C++</span></div>
+                    <div class="skill-box"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"
+                            class="custom-icon"><span>Java</span></div>
+                    <div class="skill-box"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
+                            alt="PyTorch" class="custom-icon"><span>PyTorch</span></div>
+                    <div class="skill-box"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="YOLO"
+                            class="custom-icon" style="filter: brightness(0) invert(1);"><span>YOLOv26</span></div>
+                    <div class="skill-box"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"
+                            alt="OpenCV" class="custom-icon"><span>OpenCV</span></div>
+                    <div class="skill-box"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+                            alt="Flutter" class="custom-icon"><span>Flutter</span></div>
+                    <div class="skill-box"><i class="fa-solid fa-fire"></i><span>Firebase</span></div>
+                    <div class="skill-box"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
+                    <div class="skill-box"><i class="fa-brands fa-linux"></i><span>Linux</span></div>
+                    <div class="skill-box"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works Section -->
+        <section id="works" class="works hidden">
+            <div class="section-header">
+                <h2 class="section-title"><span class="accent-color">#</span>works</h2>
+                <div class="divider">
+                    <div class="div-seg orange"></div>
+                    <div class="div-seg green-light"></div>
+                    <div class="div-seg green-main"></div>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Multi-Camera 3D Detection</h3>
+                        <p class="project-desc">Real-time multi-camera person detection system using YOLOv8 with 3D
+                            position triangulation via multi-view geometry.
+                            Dockerized for reproducible deployment across machines.</p>
+                        <div class="project-tech">
+                            <span>YOLOv5</span>
+                            <span>Docker</span>
+                            <span>OpenCV</span>
+                        </div>
+                        <a href="https://github.com/Galvix/Major" target="_blank" class="github-link">
+                            <i class="fa-brands fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">DairyDues — Dairy Finance</h3>
+                        <p class="project-desc">Comprehensive Flutter/Firebase application for dairy tracking. Manages
+                            milk quotas, robust loan tracking, and automated PDF/Excel statistical export.</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>Dart</span>
+                        </div>
+                        <a href="https://github.com/Galvix/DairyDues" target="_blank" class="github-link">
+                            <i class="fa-brands fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">SunSense</h3>
+                        <p class="project-desc">Computer Vision-based solar panel monitoring project. Identifies panel
+                            contaminations using CNNs to trigger automated cleaning processes dynamically.</p>
+                        <div class="project-tech">
+                            <span>CNN</span>
+                            <span>IoT</span>
+                            <span>Python</span>
+                        </div>
+                        <a href="https://github.com/Galvix/SunSense" target="_blank" class="github-link">
+                            <i class="fa-brands fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Custom YOLO Model</h3>
+                        <p class="project-desc">Highly optimized object detection model trained on ~10K specific
+                            annotations locally. Evaluated heavily using NumPy and OpenCV.</p>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>NumPy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="works hidden">
+            <div class="section-header">
+                <h2 class="section-title"><span class="accent-color">#</span>achievements</h2>
+                <div class="divider">
+                    <div class="div-seg orange"></div>
+                    <div class="div-seg green-light"></div>
+                    <div class="div-seg green-main"></div>
+                </div>
+            </div>
+
+            <div class="projects-grid achievements-grid">
+                <!-- Card 1 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Best Startup Potential · Technovate 2025</h3>
+                        <p class="project-desc">Awarded at Amity University's flagship tech fest, judged by DRDO
+                            engineers. Recognized for an innovative ML/CV-based product concept with real-world
+                            application and commercial viability.</p>
+                        <div class="project-tech">
+                            <span>ML</span>
+                            <span>CV</span>
+                            <span>Award</span>
+                            <span>DRDO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Smart India Hackathon 2023 Finalist</h3>
+                        <p class="project-desc">Led a team of 5 to the national finals. Built an ML-based personalized
+                            recommendation engine for MathWorks under SIH's 36-hour sprint format.</p>
+                        <div class="project-tech">
+                            <span>Leadership</span>
+                            <span>ML</span>
+                            <span>Hackathon</span>
+                            <span>MathWorks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">US-India Higher Education Conference · IT Lead</h3>
+                        <p class="project-desc">Led a team of 3 as dedicated technical and IT lead for the US-India
+                            Higher Education Conference at FDU, New Jersey. Managed live systems, AV infrastructure, and
+                            on-ground technical coordination.</p>
+                        <div class="project-tech">
+                            <span>Leadership</span>
+                            <span>Team Lead</span>
+                            <span>International</span>
+                            <span>Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact hidden">
+            <div class="section-header">
+                <h2 class="section-title"><span class="accent-color">#</span>contact</h2>
+                <div class="divider">
+                    <div class="div-seg orange"></div>
+                    <div class="div-seg green-light"></div>
+                    <div class="div-seg green-main"></div>
+                </div>
+            </div>
+
+            <div class="contact-content">
+                <p>Feel free to reach out for collaborations, open source contributions, or just dropping a hello.</p>
+                <div class="contact-links">
+                    <a href="mailto:devsinghal200@gmail.com" class="contact-link">
+                        <i class="fa-regular fa-envelope"></i> devsinghal200@gmail.com
+                    </a>
+                    <a href="https://github.com/galvix" target="_blank" class="contact-link">
+                        <i class="fa-brands fa-github"></i> github.com/galvix
+                    </a>
+                    <a href="https://linkedin.com/in/galvix" target="_blank" class="contact-link">
+                        <i class="fa-brands fa-linkedin"></i> linkedin.com/in/galvix
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dev Singhal (Galvix). Built with vanilla HTML/CSS/JS and proudly self hosted on my own private
+            server.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
