@@ -159,9 +159,8 @@
                 <div class="project-card">
                     <div class="project-content">
                         <h3 class="project-title">Multi-Camera 3D Detection</h3>
-                        <p class="project-desc">Real-time multi-camera person detection system using YOLOv8 with 3D
-                            position triangulation via multi-view geometry.
-                            Dockerized for reproducible deployment across machines.</p>
+                        <p class="project-desc">Built a real-time multi-camera person detection system using YOLOv5, designed for presentation and surveillance scenarios. Each camera feed runs on its own dedicated thread, eliminating frame blocking and keeping inference smooth across all streams simultaneously. Detected persons are highlighted with neon bounding boxes rendered via OpenCV, with a unified grid display showing all camera feeds in a single window.
+                             Packaged with a full Docker/DevContainer setup for zero-friction deployment on any machine..</p>
                         <div class="project-tech">
                             <span>YOLOv5</span>
                             <span>Docker</span>
@@ -194,12 +193,14 @@
                 <div class="project-card">
                     <div class="project-content">
                         <h3 class="project-title">SunSense</h3>
-                        <p class="project-desc">Computer Vision-based solar panel monitoring project. Identifies panel
-                            contaminations using CNNs to trigger automated cleaning processes dynamically.</p>
+                        <p class="project-desc">SunSense is a computer vision system designed to monitor solar panels and detect performance-degrading surface conditions without physical inspection. 
+                            The pipeline captures panel imagery and runs anomaly detection to identify dust accumulation, shading, cracks, and discoloration — then estimates the efficiency loss caused by each detected condition. Built to be deployable on edge hardware for continuous passive monitoring, reducing the need for manual maintenance cycles on large solar installations.</p>
                         <div class="project-tech">
-                            <span>CNN</span>
-                            <span>IoT</span>
                             <span>Python</span>
+                            <span>IoT</span>
+                            <span>OpenCV</span>
+                            <span>Edge Deployment</span>
+                            <span>CV</span>
                         </div>
                         <a href="https://github.com/Galvix/SunSense" target="_blank" class="github-link">
                             <i class="fa-brands fa-github"></i> View on GitHub
